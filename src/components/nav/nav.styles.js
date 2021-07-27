@@ -4,13 +4,15 @@ export const NavMain = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 50px;
+    margin-top: 30px;
+    margin-bottom: 30px;
 `;
 
 export const NavContainer = styled.div`
     display: flex;
     align-items: center;
     justify-content: space-between;
+    height: 60px;
 `;
 
 export const NavItem = styled.div`
@@ -18,11 +20,12 @@ export const NavItem = styled.div`
     cursor: pointer;
     position: relative;
     text-decoration: none;
-    font-size: 32px;
-    border: 0;
-    padding: 5px 20px 5px 5px;
+    font-size: 18px;
+    padding: 5px 15px 5px 15px;
+    color: rgb(40, 40, 40);
     opacity: 0.7;
     transition: 300ms ease-in-out;
+    text-transform: uppercase;
 
     &:hover {
         opacity: 1;
@@ -30,9 +33,9 @@ export const NavItem = styled.div`
     }
 
     &:before {
-        height: 18px;
+        height: 5px;
         width: 0%;
-        bottom: 12px;
+        bottom: 1px;
         content: "";
         position: absolute;
         background-color: rgba(6, 64, 170, 0.356);
@@ -41,7 +44,7 @@ export const NavItem = styled.div`
     }
 
     &:hover::before {
-        width: 75%;
+        width: 70%;
         opacity: 1;
     }
 `;

@@ -1,7 +1,6 @@
 import React from 'react';
 import { 
-    BrowserRouter as Router,
-    Link
+    NavLink
  } from 'react-router-dom';
 import {
     NavMain,
@@ -13,21 +12,19 @@ import {
 
 const Nav = () => {
     return (
-        <Router>
             <NavMain>
                 <NavContainer>
-                    <Link to="/">
+                    <NavLink exact to="/about">
                         <NavItem>About</NavItem>
-                    </Link>
-                    <Link to="/portfolio">
+                    </NavLink>
+                    <NavLink to="/portfolio">
                         <NavItem>Portfolio</NavItem>
-                    </Link>
-                    <Link to="/contact">
+                    </NavLink>
+                    <NavLink to="/contact">
                         <NavItem>Contact</NavItem>
-                    </Link>
+                    </NavLink>
                 </NavContainer>
             </NavMain>
-        </Router>
     )
 }
 
