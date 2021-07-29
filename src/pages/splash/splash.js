@@ -1,9 +1,6 @@
 import React from 'react';
 import { 
     SplashMain,
-    SplashBackground,
-    SplashVideoOverlay,
-    SplashVideoBackground,
     SplashContainer,
     SplashTopText,
     SplashImage,
@@ -13,25 +10,18 @@ import {
 } from './splash.styles';
 
 import { splashData as data } from '../../components/data/data';
-import splashVideo from '../../media/splash/video.mp4';
+import Background from '../../components/background/background';
 import ButtonCustom from '../../components/button-custom/button-custom';
 
 // FRAMER MOTION
 // https://www.youtube.com/watch?v=YxLMAk2H3ns
+// https://www.youtube.com/watch?v=3QrkCmsfewM this one
 
 
 const Splash = () => {
     return (
         <SplashMain>
-            <SplashBackground>
-                <SplashVideoOverlay />
-                <SplashVideoBackground
-                    autoPlay
-                    loop
-                    muted
-                    src={splashVideo} 
-                    type='video/mp4'/>
-            </SplashBackground>
+            <Background opacity={0.6} />
             <SplashContainer>
                 <SplashTopText>{data.topText}</SplashTopText>
                 <SplashImage src={data.img} />
