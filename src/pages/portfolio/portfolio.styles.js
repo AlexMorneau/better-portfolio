@@ -59,13 +59,13 @@ export const PortfolioHeader = styled.h4`
 export const PortfolioArrowLeft = styled.img`
     transform: scale(-1, 1);
     cursor: default;
-    max-width: 30px;
+    max-width: 20px;
     transition: 300ms ease-in-out;
 `;
 
 export const PortfolioArrowRight = styled.img`
     cursor: default;
-    max-width: 30px;
+    max-width: 20px;
     transition: 300ms ease-in-out;
 `;
 

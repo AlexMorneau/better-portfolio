@@ -1,3 +1,6 @@
+
+// ######################## IMPORTS
+
 // images
 import imgSplash from '../../media/splash/face.jpg';
 import imgAboutMe from '../../media/about/aboutme.jpg';
@@ -6,6 +9,9 @@ import imgMyInterests from '../../media/about/myinterests.jpg';
 
 // styled components
 import { StyledLink } from './data.styles';
+
+
+// ######################## GLOBAL PROPERTIES
 
 // Color pallette
 export const colors = {
@@ -24,8 +30,24 @@ export const links = {
     linkedin: 'https://www.linkedin.com/in/alex-morneau/',
     about: 'about',
     portfolio: '/portfolio',
-    contact: '/contact'
+    contact: '/contact',
+    brenlo: 'https://brenlo.com/',
+    clothingStore: 'https://clothing-store-2021.herokuapp.com/',
+    videogameDirectory: 'https://videogame-directory.netlify.app/',
+    cryptoClue: 'https://crypto-clue-7m9nebphl-alexmorneau.vercel.app/',
+    instantNewsFeed: 'https://instant-news-feed.vercel.app/',
+    musicianDatabase: 'https://ajmorneau-wa-web524-a6.azurewebsites.net/',
+    portfolio: '',
+    gh_clothingStore: 'https://github.com/AlexMorneau/clothing-store',
+    gh_videogameDirectory: 'https://github.com/AlexMorneau/videogame-directory',
+    gh_cryptoClue: 'https://github.com/AlexMorneau/Crypto-Clue',
+    gh_instantNewsFeed: 'https://github.com/AlexMorneau/instant-news-feed',
+    gh_musicianDatabase: 'https://github.com/AlexMorneau/music-database-db',
+    gh_portfolio: 'https://github.com/AlexMorneau/better-portfolio'
 }
+
+
+// ######################## PAGE DATA
 
 // Splash page
 export const splashData = {
@@ -64,5 +86,80 @@ export const aboutData = {
         button: 'say hello',
         url: links.contact,
         external: false
+    }
+}
+
+
+// Portfolio page
+export const portfolioData = {
+    brenlo: {
+        url: links.brenlo,
+        img: '',
+        title: 'brenlo',
+        description: '',
+        concepts: '',
+        button: 'visit',
+        buttonUrl: links.brenlo,
+        external: true
+    },
+    clothingStore: {
+        url: links.clothingStore,
+        img: '',
+        title: 'clothing store',
+        description: '',
+        concepts: '',
+        button: 'github',
+        buttonUrl: links.gh_clothingStore,
+        external: true
+    },
+    videogameDirectory: {
+        url: links.videogameDirectory,
+        img: '',
+        title: 'videogame data api',
+        description: '',
+        concepts: '',
+        button: 'github',
+        buttonUrl: links.gh_videogameDirectory,
+        external: true
+    },
+    cryptoClue: {
+        url: links.cryptoClue,
+        img: '',
+        title: 'crypto clue',
+        description: '',
+        concepts: '',
+        button: 'github',
+        buttonUrl: links.gh_cryptoClue,
+        external: true
+    },
+    instantNewsFeed: {
+        url: links.instantNewsFeed,
+        img: '',
+        title: 'instant news feed',
+        description: '',
+        concepts: '',
+        button: 'github',
+        buttonUrl: links.gh_instantNewsFeed,
+        external: true
+    },
+    musicianDatabase: {
+        url: links.musicianDatabase,
+        img: '',
+        title: 'music dbms',
+        description: '',
+        concepts: '',
+        button: 'github',
+        buttonUrl: links.gh_musicianDatabase,
+        external: true
+    },
+    portfolio: {
+        url: links.portfolio,
+        img: '',
+        title: 'this website!',
+        description: '',
+        concepts: '',
+        button: 'github',
+        buttonUrl: links.gh_portfolio,
+        external: true
     }
 }
