@@ -1,8 +1,6 @@
 import styled from 'styled-components';
 import { colors } from '../../components/data/data';
 
-// ############### Web page
-
 export const SplashMain = styled.div`
     display: flex;
     align-items: center;
@@ -11,40 +9,6 @@ export const SplashMain = styled.div`
     height: 720px;
     width: 100%;
 `;
-
-
-// ############### Background
-
-export const SplashBackground = styled.div`
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-`;
-
-export const SplashVideoOverlay = styled.div`
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    right: 0px;
-    bottom: 0px;
-    background: rgb(0,0,0, 0.5);
-    z-index: 2;
-`;
-
-export const SplashVideoBackground = styled.video`
-    width: 100%;
-    height: 100%;
-    -o-object-fit: cover;
-    object-fit: cover;
-`;
-
-
-// ############### Content Area
 
 export const SplashContainer = styled.div`
     display: flex;

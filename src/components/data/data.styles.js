@@ -16,3 +16,6 @@ export const StyledLink = styled.a`
     }
 
 `;
+
+export const StyledWord = styled.span`
+`;

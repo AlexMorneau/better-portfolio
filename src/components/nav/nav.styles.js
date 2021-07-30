@@ -43,7 +43,7 @@ export const NavItem = styled.div`
         display: inline-block;
         height: 1em;
         width: 100%;
-        border-bottom: 1px solid ${colors.gold};
+        border-bottom: 0.1rem solid ${colors.teal};
         margin-top: 10px;
         opacity: 0;
         -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
