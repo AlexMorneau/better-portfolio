@@ -1,7 +1,9 @@
 import styled from 'styled-components';
 
 
-export const StyledLink = styled.a`
+export const StyledLink = styled.a.attrs({
+    target: "_blank"
+})`
     cursor: pointer;
     text-decoration: none;
     color: rgb(43, 43, 43);
@@ -14,7 +16,6 @@ export const StyledLink = styled.a`
         border-bottom: 1px solid rgb(43, 43, 43);
         background: rgb(255, 251, 133);
     }
-
 `;
 
 export const StyledWord = styled.span`

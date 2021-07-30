@@ -17,7 +17,7 @@ import ButtonCustom from '../button-custom/button-custom';
 const AboutPanel = ({ data }) => {
     return (
         <PanelContainer>
-            <PanelImageWrapper className="image_wrap">
+            <PanelImageWrapper className="image_wrapper">
                 <PanelImage
                     src={data.img}
                     alt={data.alt} />

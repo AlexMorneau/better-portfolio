@@ -6,6 +6,8 @@ export const PanelContainer = styled.div`
     display: flex;
     flex-direction: column;
     margin-top: 5%;
+    /* margin-left: 80px;
+    margin-right: 80px; */
     align-items: center;
     justify-content: center;
     position: relative;
@@ -15,18 +17,18 @@ export const PanelContainer = styled.div`
     cursor: pointer;
     background-color: ${colors.white};
     opacity: 0.85;
-    transition: 300ms ease-in-out;
+    transition: 500ms ease-in-out;
     z-index: 1;
 
     &:hover {
-        transition: 300ms ease-in-out;
-        height: 480px;
+        transition: 500ms ease-in-out;
+        height: 470px;
         opacity: 1;
     }
 
-    &:hover .image_wrap {
-        transition: 500ms ease-in-out;
-        background-color: ${colors.gold};
+    &:hover .image-wrapper {
+        transition: 300ms ease-in-out;
+        background-color: rgb(255, 251, 133, 0.8);
     }
 `;
 
@@ -42,7 +44,7 @@ export const PanelImageWrapper = styled.div`
     border-radius: 50%;
     cursor: pointer;
     /* background-color: ${colors.gold}; */
-    background-color: rgb(255, 251, 133, 0.5);
+    background-color: rgb(255, 251, 133, 0.4);
     transition: 500ms ease-in-out;
     z-index: 2;
 `;

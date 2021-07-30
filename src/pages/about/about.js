@@ -13,9 +13,10 @@ const About = () => {
         <div>
             <Background />
             <Nav />
-            About
             <AboutMain>
                 <AboutPanel data={aboutData.aboutMe} />
+                <AboutPanel data={aboutData.mySkills} />
+                <AboutPanel data={aboutData.myInterests} />
             </AboutMain>
             
         </div>
