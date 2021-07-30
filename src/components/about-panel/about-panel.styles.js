@@ -5,7 +5,7 @@ import { colors } from '../data/data';
 export const PanelContainer = styled.div`
     display: flex;
     flex-direction: column;
-    margin-top: 5%;
+    margin-top: 10%;
     /* margin-left: 80px;
     margin-right: 80px; */
     align-items: center;
@@ -17,12 +17,12 @@ export const PanelContainer = styled.div`
     cursor: pointer;
     background-color: ${colors.white};
     opacity: 0.85;
-    transition: 500ms ease-in-out;
+    transition: 300ms ease-in-out;
     z-index: 1;
 
     &:hover {
-        transition: 500ms ease-in-out;
-        height: 470px;
+        transition: 300ms ease-in-out;
+        height: 475px;
         opacity: 1;
     }
 
@@ -69,12 +69,17 @@ export const PanelTitle = styled.h4`
     text-transform: uppercase;
     text-align: center;
     margin: 0;
+    margin-top: 6rem;
+    position: absolute;
+    top: 0;
     z-index: 3;
 `;
 
 export const PanelDescription = styled.p`
-    /*  */
     color: ${colors.grey};
     text-align: justify;
+    /* position: absolute;*/
+    margin-top: 9rem; 
+    top: 0;
     z-index: 3;
 `;
