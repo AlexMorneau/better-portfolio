@@ -1,5 +1,5 @@
 import React from 'react';
-import Arrow from '../../media/portfolio/icon/arrow.svg'
+import Arrow from '../../media/portfolio/icon/arrow-stroke.svg'
 
 import Background from '../../components/background/background';
 import Nav from '../../components/nav/nav';

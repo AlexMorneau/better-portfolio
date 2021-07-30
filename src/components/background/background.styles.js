@@ -20,7 +20,7 @@ export const VideoOverlay = styled.div`
     right: 0px;
     bottom: 0px;
     background: black;
-    opacity: ${props => props.opacityBg || 0.75};
+    opacity: ${props => props.opacityBg || 0.6};
     z-index: 0;
 `;
 
