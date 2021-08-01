@@ -19,8 +19,9 @@ export const VideoOverlay = styled.div`
     left: 0px;
     right: 0px;
     bottom: 0px;
-    background: black;
-    opacity: ${props => props.opacityBg || 0.6};
+    /* background: black; */
+    /* opacity: ${props => props.opacityBg || 0.6}; */
+    background: linear-gradient(0deg, rgba(0,0,0, 1) 0%, rgba(0,0,0, 0.5) 100%);
     z-index: 0;
 `;
 

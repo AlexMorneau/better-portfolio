@@ -22,7 +22,7 @@ const AboutPanel = ({ data }) => {
                     src={data.img}
                     alt={data.alt} />
             </PanelImageWrapper>
-            <PanelTitle>{data.title}</PanelTitle>
+            <PanelTitle data-title={data.title}>{data.title}</PanelTitle>
             <PanelDescription>{data.description}</PanelDescription>
             <ButtonCustom
                 buttonText={data.button}

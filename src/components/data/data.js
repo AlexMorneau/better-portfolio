@@ -19,7 +19,8 @@ export const colors = {
     black: 'rgb(17, 17, 17)',
     grey: 'rgb(43, 43, 43)',
     teal: 'rgb(166, 231, 224)',
-    gold: 'rgb(255, 251, 133)'
+    gold: 'rgb(255, 251, 133)',
+    red: 'rgb(241, 62, 115)'
 }
 
 // External links
@@ -37,7 +38,7 @@ export const links = {
     cryptoClue: 'https://crypto-clue-7m9nebphl-alexmorneau.vercel.app/',
     instantNewsFeed: 'https://instant-news-feed.vercel.app/',
     musicianDatabase: 'https://ajmorneau-wa-web524-a6.azurewebsites.net/',
-    portfolio: '',
+    portfolioSite: '',
     gh_clothingStore: 'https://github.com/AlexMorneau/clothing-store',
     gh_videogameDirectory: 'https://github.com/AlexMorneau/videogame-directory',
     gh_cryptoClue: 'https://github.com/AlexMorneau/Crypto-Clue',
@@ -61,7 +62,7 @@ export const splashData = {
 // About page
 export const aboutData = {
     aboutMe: {
-        title: 'about me',
+        title: 'about',
         img: imgAboutMe,
         alt: 'Image of Alex',
         description: <div>Hello! My name is Alex, I'm from the GTA and I'm super passionate about coding, focusing primarily on web development. I went to Seneca for <StyledLink href={links.seneca}>Computer Programming and Analysis</StyledLink>, and while there I also interned at <StyledLink href={links.websdepot}>Websdepot</StyledLink> as well as started developing my own <StyledLink href={links.github}>web apps</StyledLink>. I enjoy diving into projects and I try to bring positive energy and enthusiasm to any team that I'm a part of. Prior to programming I worked as a personal banker at Scotiabank.</div>,

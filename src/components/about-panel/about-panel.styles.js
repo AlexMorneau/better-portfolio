@@ -1,6 +1,36 @@
 import styled from 'styled-components';
+import { keyframes } from 'styled-components';
 import { colors } from '../data/data';
 
+// ######################## ANIMATIONS
+
+const GlitchAnimationRed = keyframes`
+    0% { top: -1.2px; left: -1.2px; }
+    10% { top: -1px; left: -1px; }
+    20% { top: -1px; left: -1px; }
+    30% { top: -1px; left: -1px; }
+    40% { top: -1px; left: -1px; }
+    42% { top: -1.5px; left: -1.5px; }
+    80% { top: -1.5px; left: -1.5px; }
+    82% { top: -1px; left: -1px; }
+    90% { top: -1px; left: -1px; }
+    100% { top: -1px; left: -1px; }
+`;
+
+const GlitchAnimationTeal = keyframes`
+    0% { top: 1.2px; left: 1.2px; }
+    10% { top: 1px; left: 1px; }
+    20% { top: 1px; left: 1px; }
+    30% { top: 1px; left: 1px; }
+    40% { top: 1px; left: 1px; }
+    42% { top: 1.5px; left: 1.5px; }
+    80% { top: 1.5px; left: 1.5px; }
+    82% { top: 1px; left: 1px; }
+    90% { top: 1px; left: 1px; }
+    100% { top: 1.2px; left: 1.2px; }
+`;
+
+// ######################## STYLES
 
 export const PanelContainer = styled.div`
     display: flex;
@@ -73,7 +103,31 @@ export const PanelTitle = styled.h4`
     position: absolute;
     top: 0;
     z-index: 3;
+
+    &:before, &:after {
+        content: attr(data-title);
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        z-index: -1;
+    }
+
+    &:before {
+        color: ${colors.teal};
+        animation-name: ${GlitchAnimationTeal};
+        animation-duration: 800ms;
+        animation-iteration-count: infinite;
+    }
+
+    &:after {
+        color: ${colors.red};
+        animation-name: ${GlitchAnimationRed};
+        animation-duration: 800ms;
+        animation-iteration-count: infinite;
+    }
 `;
+
 
 export const PanelDescription = styled.p`
     color: ${colors.grey};
