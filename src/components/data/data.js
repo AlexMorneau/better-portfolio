@@ -34,6 +34,9 @@ import {
     StyledSubcontainer 
 } from './data.styles';
 
+// other
+import ReactTooltip from 'react-tooltip';
+
 
 // ######################## GLOBAL PROPERTIES
 
@@ -89,7 +92,7 @@ export const aboutData = {
         title: 'about',
         img: imgAboutMe,
         alt: 'Image of Alex',
-        description: <div>Hello! My name is Alex, I'm from the GTA and I'm super passionate about coding, focusing primarily on web development. I went to Seneca for <StyledLink href={links.seneca}>Computer Programming and Analysis</StyledLink>, and while there I also interned at <StyledLink href={links.websdepot}>Websdepot</StyledLink> as well as started developing my own <StyledLink href={links.github}>web apps</StyledLink>. I enjoy diving into projects and I try to bring positive energy and enthusiasm to any team that I'm a part of. Prior to programming I worked as a personal banker at Scotiabank.</div>,
+        description: <div>Hello! My name is Alex, I'm super passionate about coding with a focus on web development. I went to Seneca for <StyledLink href={links.seneca}>Computer Programming and Analysis</StyledLink>, and while there I also interned at <StyledLink href={links.websdepot}>Websdepot</StyledLink> as well as started developing my own <StyledLink href={links.github}>web apps</StyledLink>. I enjoy diving into projects and I try to bring positive energy and enthusiasm to any team that I'm a part of.</div>,
         button: 'linkedin',
         url: links.linkedin,
         external: true
@@ -102,28 +105,31 @@ export const aboutData = {
         <StyledMainContainer>
             <StyledSubheader>front end</StyledSubheader>
             <StyledSubcontainer>
-                <StyledIcon src={imgReact} alt="reactjs"/>
-                <StyledIcon src={imgNext} alt="nextjs"/>
-                <StyledIcon src={imgAngular} alt="angularjs"/>
-                <StyledIcon src={imgDotNet} alt="dot-net"/>
+                <StyledIcon src={imgReact} alt="reactjs" data-tip="React.js" />
+                <StyledIcon src={imgNext} alt="nextjs" data-tip="Next.js" />
+                <StyledIcon src={imgAngular} alt="angularjs" data-tip="AngularJS" />
+                <StyledIcon src={imgDotNet} alt="dot-net" data-tip="ASP.NET" />
             </StyledSubcontainer>
+            <ReactTooltip />
             <StyledSubheader>back end</StyledSubheader>
             <StyledSubcontainer>
-                <StyledIcon src={imgMongoDb} alt="mongo-db"/>
-                <StyledIcon src={imgExpress} alt="express"/>
-                <StyledIcon src={imgMySql} alt="my-sql"/>
-                <StyledIcon src={imgMsSql} alt="ms-sql"/>
+                <StyledIcon src={imgMongoDb} alt="mongo-db" data-tip="MongoDB" />
+                <StyledIcon src={imgExpress} alt="express" data-tip="Express" />
+                <StyledIcon src={imgMySql} alt="my-sql" data-tip="MySQL" />
+                <StyledIcon src={imgMsSql} alt="ms-sql" data-tip="Microsoft SQL Server" />
             </StyledSubcontainer>
+            <ReactTooltip />
             <StyledSubheader>languages</StyledSubheader>
             <StyledSubcontainer>
-                <StyledIcon src={imgJavascript} alt="javascript"/>
-                <StyledIcon src={imgHtml5} alt="html5"/>
-                <StyledIcon src={imgCss} alt="css"/>
-                <StyledIcon src={imgJava} alt="java"/>
-                <StyledIcon src={imgC} alt="c"/>
-                <StyledIcon src={imgCplusplus} alt="c-plus-plus"/>
-                <StyledIcon src={imgCsharp} alt="c-sharp"/>
+                <StyledIcon src={imgJavascript} alt="javascript" data-tip="Javascript" />
+                <StyledIcon src={imgHtml5} alt="html5" data-tip="HTML5" />
+                <StyledIcon src={imgCss} alt="css" data-tip="CSS / Sass" />
+                <StyledIcon src={imgJava} alt="java" data-tip="Java" />
+                <StyledIcon src={imgC} alt="c" data-tip="C" />
+                <StyledIcon src={imgCplusplus} alt="c-plus-plus" data-tip="C++" />
+                <StyledIcon src={imgCsharp} alt="c-sharp" data-tip="C#" />
             </StyledSubcontainer>
+            <ReactTooltip />
         </StyledMainContainer>,
         button: 'github',
         url: links.github,

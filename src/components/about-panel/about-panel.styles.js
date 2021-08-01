@@ -1,28 +1,5 @@
 import styled from 'styled-components';
-import { keyframes } from 'styled-components';
 import { colors } from '../data/data';
-
-// ######################## ANIMATIONS
-
-const GlitchAnimationRed = keyframes`
-    0% {  }
-    80% {  }
-    81% {  }
-    88% {  }
-    89% {  }
-    90% {  }
-`;
-
-const GlitchAnimationTeal = keyframes`
-    0% {  }
-    80% {  }
-    81% {  }
-    88% {  }
-    89% {  }
-    90% {  }
-`;
-
-// ######################## STYLES
 
 export const PanelContainer = styled.div`
     display: flex;
@@ -61,12 +38,10 @@ export const PanelImageWrapper = styled.div`
     align-items: center;
     position: absolute;
     top: -8%;
-    /* left: -3%; */
     height: 180px;
     width: 180px;
     border-radius: 50%;
     cursor: default;
-    /* background-color: ${colors.gold}; */
     background-color: ${colors.teal};
     transition: 500ms ease-in-out;
     z-index: 2;
@@ -83,7 +58,6 @@ export const PanelImage = styled.img`
 `;
 
 export const PanelTitle = styled.h4`
-    /*  */
     font-family: 'Secular One', sans-serif;
     letter-spacing: 0.1rem;
     cursor: default;
@@ -113,9 +87,6 @@ export const PanelTitle = styled.h4`
         top: 2px;
         left: 2px;
         transition: 100ms ease-in-out;
-        /* animation-name: ${GlitchAnimationTeal};
-        animation-duration: 3s;
-        animation-iteration-count: infinite; */
     }
 
     &:after {
@@ -123,21 +94,6 @@ export const PanelTitle = styled.h4`
         top: -2px;
         left: -2px;
         transition: 100ms ease-in-out;
-    }
-
-    &:hover {
-
-        &::before {
-            top: 3px;
-            left: 3px;
-            transition: 100ms ease-in-out;
-        }
-
-        &::after {
-            top: -3px;
-            left: -3px;
-            transition: 100ms ease-in-out;
-        }
     }
 `;
 

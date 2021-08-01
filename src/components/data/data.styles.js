@@ -38,8 +38,8 @@ export const StyledIcon = styled.img`
     cursor: pointer;
     max-height: 33px;
     width: auto;
-    margin-right: 0.2rem;
-    margin-left: 0.2rem;
+    margin-right: 0.3rem;
+    margin-left: 0.3rem;
 `;
 
 export const StyledSubheader = styled.h1`
@@ -49,4 +49,5 @@ export const StyledSubheader = styled.h1`
     border-bottom: 1px solid grey;
     text-transform: uppercase;
     letter-spacing: 0.1rem;
+    margin-top: 1rem;
 `;
