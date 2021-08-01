@@ -1,14 +1,38 @@
 
 // ######################## IMPORTS
 
-// images
+// images - 'splash' and 'about'
 import imgSplash from '../../media/splash/face.jpg';
 import imgAboutMe from '../../media/about/aboutme.jpg';
 import imgMySkills from '../../media/about/myskills.png';
 import imgMyInterests from '../../media/about/myinterests.jpg';
 
+// images - 'skills'
+import imgAngular from '../../media/skill-icons/angularjs.svg';
+import imgC from '../../media/skill-icons/c.svg';
+import imgCplusplus from '../../media/skill-icons/cplusplus.svg';
+import imgCsharp from '../../media/skill-icons/csharp.svg';
+import imgCss from '../../media/skill-icons/css3.svg';
+import imgDotNet from '../../media/skill-icons/dot-net.svg';
+import imgExpress from '../../media/skill-icons/express.svg';
+import imgHtml5 from '../../media/skill-icons/html5.svg';
+import imgJava from '../../media/skill-icons/java.svg';
+import imgJavascript from '../../media/skill-icons/javascript.svg';
+import imgMsSql from '../../media/skill-icons/microsoftsqlserver.svg';
+import imgMongoDb from '../../media/skill-icons/mongodb.svg';
+import imgMySql from '../../media/skill-icons/mysql.svg';
+import imgNext from '../../media/skill-icons/nextjs.svg';
+import imgReact from '../../media/skill-icons/react.svg';
+
+
 // styled components
-import { StyledLink } from './data.styles';
+import { 
+    StyledLink, 
+    StyledIcon,
+    StyledSubheader,
+    StyledMainContainer,
+    StyledSubcontainer 
+} from './data.styles';
 
 
 // ######################## GLOBAL PROPERTIES
@@ -74,7 +98,33 @@ export const aboutData = {
         title: 'skills',
         img: imgMySkills,
         alt: 'Image representing my skills',
-        description: <div>Most of my work is done in Javascript, HTML, and CSS, often defaulting to React or Next.js as my preferred frameworks. However, I am comfortable with Angular.js and Node.js with Express. I know a number of query languages, including PL/SQL, and I have developed full-stack applications using ASP.NET MVC (C#) and PHP MVC. I also learned the fundamentals of C, C++, Java, and Swift.</div>,
+        description: 
+        <StyledMainContainer>
+            <StyledSubheader>front end</StyledSubheader>
+            <StyledSubcontainer>
+                <StyledIcon src={imgReact} alt="reactjs"/>
+                <StyledIcon src={imgNext} alt="nextjs"/>
+                <StyledIcon src={imgAngular} alt="angularjs"/>
+                <StyledIcon src={imgDotNet} alt="dot-net"/>
+            </StyledSubcontainer>
+            <StyledSubheader>back end</StyledSubheader>
+            <StyledSubcontainer>
+                <StyledIcon src={imgMongoDb} alt="mongo-db"/>
+                <StyledIcon src={imgExpress} alt="express"/>
+                <StyledIcon src={imgMySql} alt="my-sql"/>
+                <StyledIcon src={imgMsSql} alt="ms-sql"/>
+            </StyledSubcontainer>
+            <StyledSubheader>languages</StyledSubheader>
+            <StyledSubcontainer>
+                <StyledIcon src={imgJavascript} alt="javascript"/>
+                <StyledIcon src={imgHtml5} alt="html5"/>
+                <StyledIcon src={imgCss} alt="css"/>
+                <StyledIcon src={imgJava} alt="java"/>
+                <StyledIcon src={imgC} alt="c"/>
+                <StyledIcon src={imgCplusplus} alt="c-plus-plus"/>
+                <StyledIcon src={imgCsharp} alt="c-sharp"/>
+            </StyledSubcontainer>
+        </StyledMainContainer>,
         button: 'github',
         url: links.github,
         external: true

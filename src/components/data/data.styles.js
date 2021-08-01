@@ -18,5 +18,35 @@ export const StyledLink = styled.a.attrs({
     }
 `;
 
-export const StyledWord = styled.span`
+export const StyledMainContainer = styled.div`
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+`;
+
+export const StyledSubcontainer = styled.div`
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+`;
+
+export const StyledIcon = styled.img`
+    cursor: pointer;
+    max-height: 33px;
+    width: auto;
+    margin-right: 0.2rem;
+    margin-left: 0.2rem;
+`;
+
+export const StyledSubheader = styled.h1`
+    cursor: default;
+    font-size: 1rem;
+    text-decoration: none;
+    border-bottom: 1px solid grey;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
 `;
