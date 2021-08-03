@@ -46,9 +46,12 @@ export const SplashImage = styled.img`
 `;
 
 export const SplashHeader = styled.div`
+    text-decoration: none;
+    text-transform: uppercase;
     cursor: default;
     font-size: 1.4rem;
     word-spacing: 0.2rem;
+    letter-spacing: 0.2rem;
     font-weight: bold;
 `;
 

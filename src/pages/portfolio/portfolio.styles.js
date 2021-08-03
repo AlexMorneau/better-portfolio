@@ -21,7 +21,8 @@ const FloatingAnimation = keyframes`
 // ############### STYLED COMPONENTS
 
 export const PortfolioMain = styled.div`
-    display:flex;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     z-index: 1;

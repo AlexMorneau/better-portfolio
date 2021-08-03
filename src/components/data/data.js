@@ -1,15 +1,15 @@
 
 // ######################## IMPORTS
 
-// images - 'splash' and 'about'
+// images - 'splash' and 'about' | photos of me
 import imgSplash from '../../media/splash/face.jpg';
 import imgAboutMe from '../../media/about/aboutme.jpg';
 import imgMySkills from '../../media/about/myskills.png';
 import imgMyInterests from '../../media/about/myinterests.jpg';
 
-// images - 'skills'
+// images - 'skills' and 'portfolio' | tech stack icons
 import imgAngular from '../../media/skill-icons/angularjs.svg';
-import imgC from '../../media/skill-icons/c.svg';
+import imgTypescript from '../../media/skill-icons/typescript.svg';
 import imgCplusplus from '../../media/skill-icons/cplusplus.svg';
 import imgCsharp from '../../media/skill-icons/csharp.svg';
 import imgCss from '../../media/skill-icons/css3.svg';
@@ -24,6 +24,15 @@ import imgMySql from '../../media/skill-icons/mysql.svg';
 import imgNext from '../../media/skill-icons/nextjs.svg';
 import imgReact from '../../media/skill-icons/react.svg';
 
+// images - 'portfolio' | screenshots of my work
+import imgBrenlo from '../../media/portfolio/screenshot/brenlo.png';
+import imgClothingStore from '../../media/portfolio/screenshot/clothing-store.png';
+import imgCryptoClue from '../../media/portfolio/screenshot/crypto-clue.png';
+import imgMusicianDb from '../../media/portfolio/screenshot/musician-db.png';
+import imgNewsFeed from '../../media/portfolio/screenshot/news-feed.png';
+import imgPortfolio from '../../media/portfolio/screenshot/portfolio.png';
+import imgVgdb from '../../media/portfolio/screenshot/vgdb.png';
+
 
 // styled components
 import { 
@@ -34,7 +43,7 @@ import {
     StyledSubcontainer 
 } from './data.styles';
 
-// other
+// tooltips
 import ReactTooltip from 'react-tooltip';
 
 
@@ -45,6 +54,7 @@ export const colors = {
     white: 'rgb(237, 237, 237)',
     black: 'rgb(17, 17, 17)',
     grey: 'rgb(43, 43, 43)',
+    lightGrey: 'rgb(60, 60, 60)',
     teal: 'rgb(166, 231, 224)',
     gold: 'rgb(255, 251, 133)',
     red: 'rgb(241, 62, 115)'
@@ -122,10 +132,10 @@ export const aboutData = {
             <StyledSubheader>languages</StyledSubheader>
             <StyledSubcontainer>
                 <StyledIcon src={imgJavascript} alt="javascript" data-tip="Javascript" />
+                <StyledIcon src={imgTypescript} alt="typescript" data-tip="Typescript" />
                 <StyledIcon src={imgHtml5} alt="html5" data-tip="HTML5" />
                 <StyledIcon src={imgCss} alt="css" data-tip="CSS / Sass" />
                 <StyledIcon src={imgJava} alt="java" data-tip="Java" />
-                <StyledIcon src={imgC} alt="c" data-tip="C" />
                 <StyledIcon src={imgCplusplus} alt="c-plus-plus" data-tip="C++" />
                 <StyledIcon src={imgCsharp} alt="c-sharp" data-tip="C#" />
             </StyledSubcontainer>
@@ -148,75 +158,75 @@ export const aboutData = {
 
 
 // Portfolio page
-export const portfolioData = {
-    brenlo: {
+export const portfolioData = [
+    {
         url: links.brenlo,
-        img: '',
+        img: imgBrenlo,
         title: 'brenlo',
-        description: '',
-        concepts: '',
+        description: 'A client website I helped design and develop using PHP MVC and Wordpress while working at Websdepot. This included most page layouts, navigation, animations, and certain elements of the catalogue.',
+        icons: '',
         button: 'visit',
         buttonUrl: links.brenlo,
         external: true
     },
-    clothingStore: {
+    {
         url: links.clothingStore,
-        img: '',
-        title: 'clothing store',
-        description: '',
-        concepts: '',
+        img: imgClothingStore,
+        title: 'clothing shop',
+        description: 'temporary text',
+        icons: '',
         button: 'github',
         buttonUrl: links.gh_clothingStore,
         external: true
     },
-    videogameDirectory: {
+    {
         url: links.videogameDirectory,
-        img: '',
-        title: 'videogame data api',
-        description: '',
-        concepts: '',
+        img: imgVgdb,
+        title: 'videogame directory',
+        description: 'VGDirectory pulls data from RAWG API (https://rawg.io/apidocs), and presents a list of games that can be searched, filtered, or selected. Upon selection a details page is rendered along with media corresponding to the game, such as a banner image, screenshots, trailers, and metacritic rating.',
+        icons: '',
         button: 'github',
         buttonUrl: links.gh_videogameDirectory,
         external: true
     },
-    cryptoClue: {
+    {
         url: links.cryptoClue,
-        img: '',
+        img: imgCryptoClue,
         title: 'crypto clue',
-        description: '',
-        concepts: '',
+        description: 'A simple cryptocurrency hub that fetches and presents an array of organized crypto data in table format, providing a search bar to narrow results by the symbol (ticker) or coin name. CoinGecko API (https://www.coingecko.com/en/api) is used.',
+        icons: '',
         button: 'github',
         buttonUrl: links.gh_cryptoClue,
         external: true
     },
-    instantNewsFeed: {
+    {
         url: links.instantNewsFeed,
-        img: '',
-        title: 'instant news feed',
-        description: '',
-        concepts: '',
+        img: imgNewsFeed,
+        title: 'instant news',
+        description: 'Instant News Feed queries Canadian news data from NewsAPI.org (https://newsapi.org/) and presents it in a horizontally scrollable list. Pagination is used to limit the results being rendered to the page to reduce loading times.',
+        icons: '',
         button: 'github',
         buttonUrl: links.gh_instantNewsFeed,
         external: true
     },
-    musicianDatabase: {
+    {
         url: links.musicianDatabase,
-        img: '',
+        img: imgMusicianDb,
         title: 'music dbms',
-        description: '',
-        concepts: '',
+        description: 'A relational database management system for performing CRUD operations on Artists, Albums, and Tracks. This web app features layered authentication and authorization roles, Model-View-Controller design architecture, eager loading, migrations & snapshots, conditional elements & menus, LINQ, and much more.',
+        icons: '',
         button: 'github',
         buttonUrl: links.gh_musicianDatabase,
         external: true
     },
-    portfolio: {
+    {
         url: links.portfolio,
-        img: '',
+        img: imgPortfolio,
         title: 'this website!',
-        description: '',
-        concepts: '',
+        description: 'temporary text',
+        icons: '',
         button: 'github',
         buttonUrl: links.gh_portfolio,
         external: true
     }
-}
+];

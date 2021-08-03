@@ -25,7 +25,7 @@ const Splash = () => {
             <SplashContainer>
                 <SplashTopText>{data.topText}</SplashTopText>
                 <SplashImage src={data.img} />
-                <SplashHeader>{data.header}</SplashHeader>
+                <SplashHeader data-header={data.header}>{data.header}</SplashHeader>
                 <SplashSubheader>{data.subheader}</SplashSubheader>
                 <SplashDescription>{data.description}</SplashDescription>
                 <ButtonCustom

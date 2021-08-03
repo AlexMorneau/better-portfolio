@@ -70,7 +70,6 @@ export const PanelTitle = styled.h4`
     margin-top: 6rem;
     position: absolute;
     top: 0;
-    transition: 300ms ease-in-out;
     z-index: 3;
 
     &:before, &:after {
