@@ -22,10 +22,21 @@ const FloatingAnimation = keyframes`
 
 export const PortfolioMain = styled.div`
     display: flex;
-    flex-direction: column;
+    height: 100%;
+    width: 100%;
     justify-content: center;
     align-items: center;
     z-index: 1;
+`;
+
+export const PortfolioGrid = styled.div`
+    margin: 6rem 6rem 6rem 6rem;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    flex-basis: 100%;
+    grid-template-columns: repeat(auto-fit, 400px);
+    grid-gap: 3rem;
 `;
 
 export const PortfolioHeaderContainer = styled.div`

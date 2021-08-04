@@ -7,7 +7,7 @@ export const PtfPanelContainer = styled.div`
     flex-basis: 100%;
     align-items: center;
     justify-content: flex-start;
-    cursor: pointer;
+    cursor: default;
     position: relative;
     min-height: 600px;
     height: 600px;
@@ -26,6 +26,7 @@ export const PtfPanelContainer = styled.div`
 
 export const PtfImageWrapper = styled.div`
     display: flex;
+    cursor: pointer;
     /* align-items: center; */
     justify-content: center;
     height: 200px;
@@ -39,6 +40,7 @@ export const PtfImageWrapper = styled.div`
 
 export const PftImageOverlay = styled.div`
     position: absolute;
+    cursor: pointer;
     height: 100%;
     width: 100%;
     background: ${colors.grey};
@@ -52,6 +54,7 @@ export const PftImageOverlay = styled.div`
 `;
 
 export const PtfImage = styled.img`
+    cursor: pointer;
     z-index: 1;
 `;
 
@@ -78,6 +81,6 @@ export const PtfPanelDescription = styled.p`
     margin-right: 2rem;
 `;
 
-export const PtfIconWrapper = styled.div`
+export const PtfIconWrapper = styled.p`
     /*  */
 `;

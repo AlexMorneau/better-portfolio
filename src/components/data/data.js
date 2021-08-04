@@ -23,6 +23,12 @@ import imgMongoDb from '../../media/skill-icons/mongodb.svg';
 import imgMySql from '../../media/skill-icons/mysql.svg';
 import imgNext from '../../media/skill-icons/nextjs.svg';
 import imgReact from '../../media/skill-icons/react.svg';
+import imgPhp from '../../media/skill-icons/php.svg';
+import imgWordpress from '../../media/skill-icons/wordpress.svg';
+import imgFirebase from '../../media/skill-icons/firebase.svg';
+import imgRedux from '../../media/skill-icons/redux.svg';
+import imgBootstrap from '../../media/skill-icons/bootstrap.svg';
+import imgMaterial from '../../media/skill-icons/materialui.svg';
 
 // images - 'portfolio' | screenshots of my work
 import imgBrenlo from '../../media/portfolio/screenshot/brenlo.png';
@@ -40,7 +46,8 @@ import {
     StyledIcon,
     StyledSubheader,
     StyledMainContainer,
-    StyledSubcontainer 
+    StyledSubcontainer,
+    PtfIconWrapper 
 } from './data.styles';
 
 // tooltips
@@ -75,7 +82,6 @@ export const links = {
     cryptoClue: 'https://crypto-clue-7m9nebphl-alexmorneau.vercel.app/',
     instantNewsFeed: 'https://instant-news-feed.vercel.app/',
     musicianDatabase: 'https://ajmorneau-wa-web524-a6.azurewebsites.net/',
-    portfolioSite: '',
     gh_clothingStore: 'https://github.com/AlexMorneau/clothing-store',
     gh_videogameDirectory: 'https://github.com/AlexMorneau/videogame-directory',
     gh_cryptoClue: 'https://github.com/AlexMorneau/Crypto-Clue',
@@ -164,29 +170,17 @@ export const portfolioData = [
         img: imgBrenlo,
         title: 'brenlo',
         description: 'A client website I helped design and develop using PHP MVC and Wordpress while working at Websdepot. This included most page layouts, navigation, animations, and certain elements of the catalogue.',
-        icons: '',
+        icons:
+        <>
+        <PtfIconWrapper>
+            <StyledIcon src={imgPhp} alt="PHP" data-tip="php" />
+            <StyledIcon src={imgWordpress} alt="WordPress" data-tip="WordPress" />
+            <StyledIcon src={imgMsSql} alt="MS SQL" data-tip="Microsoft SQL Server" />
+        </PtfIconWrapper>
+        <ReactTooltip />
+        </>,
         button: 'visit',
         buttonUrl: links.brenlo,
-        external: true
-    },
-    {
-        url: links.clothingStore,
-        img: imgClothingStore,
-        title: 'clothing shop',
-        description: 'temporary text',
-        icons: '',
-        button: 'github',
-        buttonUrl: links.gh_clothingStore,
-        external: true
-    },
-    {
-        url: links.videogameDirectory,
-        img: imgVgdb,
-        title: 'videogame directory',
-        description: 'VGDirectory pulls data from RAWG API (https://rawg.io/apidocs), and presents a list of games that can be searched, filtered, or selected. Upon selection a details page is rendered along with media corresponding to the game, such as a banner image, screenshots, trailers, and metacritic rating.',
-        icons: '',
-        button: 'github',
-        buttonUrl: links.gh_videogameDirectory,
         external: true
     },
     {
@@ -194,9 +188,34 @@ export const portfolioData = [
         img: imgCryptoClue,
         title: 'crypto clue',
         description: 'A simple cryptocurrency hub that fetches and presents an array of organized crypto data in table format, providing a search bar to narrow results by the symbol (ticker) or coin name. CoinGecko API (https://www.coingecko.com/en/api) is used.',
-        icons: '',
+        icons:
+        <>
+        <PtfIconWrapper>
+            <StyledIcon src={imgReact} alt="Reactjs" data-tip="React.js" />
+            <StyledIcon src={imgNext} alt="Nextjs" data-tip="Next.js" />
+        </PtfIconWrapper>
+        <ReactTooltip />
+        </>,
         button: 'github',
         buttonUrl: links.gh_cryptoClue,
+        external: true
+    },
+    {
+        url: links.clothingStore,
+        img: imgClothingStore,
+        title: 'clothing shop',
+        description: 'temporary text',
+        icons:
+        <>
+        <PtfIconWrapper>
+            <StyledIcon src={imgReact} alt="Reactjs" data-tip="React.js" />
+            <StyledIcon src={imgRedux} alt="Redux" data-tip="Redux" />
+            <StyledIcon src={imgFirebase} alt="Firebase" data-tip="Firebase" />
+        </PtfIconWrapper>
+        <ReactTooltip />
+        </>,
+        button: 'github',
+        buttonUrl: links.gh_clothingStore,
         external: true
     },
     {
@@ -204,7 +223,14 @@ export const portfolioData = [
         img: imgNewsFeed,
         title: 'instant news',
         description: 'Instant News Feed queries Canadian news data from NewsAPI.org (https://newsapi.org/) and presents it in a horizontally scrollable list. Pagination is used to limit the results being rendered to the page to reduce loading times.',
-        icons: '',
+        icons:
+        <>
+        <PtfIconWrapper>
+            <StyledIcon src={imgReact} alt="Reactjs" data-tip="React.js" />
+            <StyledIcon src={imgNext} alt="Nextjs" data-tip="Next.js" />
+        </PtfIconWrapper>
+        <ReactTooltip />
+        </>,
         button: 'github',
         buttonUrl: links.gh_instantNewsFeed,
         external: true
@@ -213,18 +239,51 @@ export const portfolioData = [
         url: links.musicianDatabase,
         img: imgMusicianDb,
         title: 'music dbms',
-        description: 'A relational database management system for performing CRUD operations on Artists, Albums, and Tracks. This web app features layered authentication and authorization roles, Model-View-Controller design architecture, eager loading, migrations & snapshots, conditional elements & menus, LINQ, and much more.',
-        icons: '',
+        description: 'A database management system for performing CRUD operations on Artists, Albums, and Tracks. This web app features layered authentication and authorization roles, MVC design architecture, eager loading, migrations & snapshots, conditional elements, LINQ, and much more.',
+        icons:
+        <>
+        <PtfIconWrapper>
+            <StyledIcon src={imgDotNet} alt="ASP.NET" data-tip="ASP.NET" />
+            <StyledIcon src={imgCsharp} alt="C#" data-tip="C#" />
+            <StyledIcon src={imgHtml5} alt="HTML" data-tip="HTML" />
+            <StyledIcon src={imgCss} alt="CSS" data-tip="CSS" />
+            <StyledIcon src={imgBootstrap} alt="Bootstrap" data-tip="Bootstrap" />
+        </PtfIconWrapper>
+        <ReactTooltip />
+        </>,
         button: 'github',
         buttonUrl: links.gh_musicianDatabase,
         external: true
     },
     {
-        url: links.portfolio,
+        url: links.videogameDirectory,
+        img: imgVgdb,
+        title: 'videogame directory',
+        description: 'VGDirectory pulls data from RAWG API (https://rawg.io/apidocs), and presents a list of games that can be searched, filtered, or selected. Upon selection a details page is rendered along with media corresponding to the game, such as a banner image, screenshots, trailers, and metacritic rating.',
+        icons:
+        <>
+        <PtfIconWrapper>
+            <StyledIcon src={imgAngular} alt="AngularJS" data-tip="AngularJS" />
+            <StyledIcon src={imgMaterial} alt="MaterialUI" data-tip="MaterialUI" />
+        </PtfIconWrapper>
+        <ReactTooltip />
+        </>,
+        button: 'github',
+        buttonUrl: links.gh_videogameDirectory,
+        external: true
+    },
+    {
+        url: links.gh_portfolio,
         img: imgPortfolio,
         title: 'this website!',
         description: 'temporary text',
-        icons: '',
+        icons:
+        <>
+        <PtfIconWrapper>
+            <StyledIcon src={imgReact} alt="Reactjs" data-tip="React.js" />
+        </PtfIconWrapper>
+        <ReactTooltip />
+        </>,
         button: 'github',
         buttonUrl: links.gh_portfolio,
         external: true

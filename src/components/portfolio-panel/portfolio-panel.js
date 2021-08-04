@@ -14,14 +14,18 @@ import ButtonCustom from '../button-custom/button-custom';
 const PortfolioPanel = ({ data }) => {
     return (
         <PtfPanelContainer
-            onClick={() => window.open(data.url, '_newtab')}>
+            >
             <PtfImageWrapper>
-                <PftImageOverlay></PftImageOverlay>
-                <PtfImage src={data.img} />
+                <PftImageOverlay
+                    onClick={() => window.open(data.url, '_newtab')} />
+                <PtfImage 
+                    src={data.img}
+                    alt={data.title}
+                     />
             </PtfImageWrapper>
             <PtfPanelHeader>{data.title}</PtfPanelHeader>
             <PtfPanelDescription>{data.description}</PtfPanelDescription>
-            <PtfIconWrapper></PtfIconWrapper>
+            <PtfIconWrapper>{data.icons}</PtfIconWrapper>
             <ButtonCustom
                 buttonText={data.button}
                 buttonLink={data.buttonUrl}

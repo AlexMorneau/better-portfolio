@@ -35,7 +35,7 @@ export const StyledSubcontainer = styled.div`
 `;
 
 export const StyledIcon = styled.img`
-    cursor: pointer;
+    cursor: default;
     max-height: 33px;
     width: auto;
     margin-right: 0.3rem;
@@ -50,4 +50,12 @@ export const StyledSubheader = styled.h1`
     text-transform: uppercase;
     letter-spacing: 0.1rem;
     margin-top: 1rem;
+`;
+
+export const PtfIconWrapper = styled.div`
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    width: 300px;
 `;

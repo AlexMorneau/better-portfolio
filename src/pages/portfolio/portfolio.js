@@ -6,6 +6,7 @@ import Nav from '../../components/nav/nav';
 
 import {
     PortfolioMain,
+    PortfolioGrid,
     PortfolioHeaderContainer,
     PortfolioHeader,
     PortfolioArrowLeft,
@@ -23,19 +24,19 @@ const Portfolio = () => {
             <Nav />
             
             <PortfolioMain>
-                <PortfolioHeaderContainer>
+                {/* <PortfolioHeaderContainer>
                     <PortfolioArrowLeft src={Arrow} />
                     <PortfolioHeader>scroll to explore!</PortfolioHeader>
                     <PortfolioArrowRight src={Arrow} />
-                </PortfolioHeaderContainer>
+                </PortfolioHeaderContainer> */}
 
-                    {
-                        portfolioData.map((project) => (
-                            <PortfolioPanel data={project} />
-                        ))
-                    }
-                {/* <PortfolioPanel data={portfolioData.videogameDirectory} /> */}
-            
+                <PortfolioGrid>
+                {
+                    portfolioData.map((project) => (
+                        <PortfolioPanel data={project} />
+                    ))
+                }
+                </PortfolioGrid>
 
             </PortfolioMain>
         </div>
