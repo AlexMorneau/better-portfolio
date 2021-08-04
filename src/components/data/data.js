@@ -123,7 +123,7 @@ export const aboutData = {
             <StyledSubcontainer>
                 <StyledIcon src={imgReact} alt="reactjs" data-tip="React.js" />
                 <StyledIcon src={imgNext} alt="nextjs" data-tip="Next.js" />
-                <StyledIcon src={imgAngular} alt="angularjs" data-tip="AngularJS" />
+                <StyledIcon src={imgAngular} alt="angular" data-tip="Angular" />
                 <StyledIcon src={imgDotNet} alt="dot-net" data-tip="ASP.NET" />
             </StyledSubcontainer>
             <ReactTooltip />
@@ -263,7 +263,8 @@ export const portfolioData = [
         icons:
         <>
         <PtfIconWrapper>
-            <StyledIcon src={imgAngular} alt="AngularJS" data-tip="AngularJS" />
+            <StyledIcon src={imgAngular} alt="Angular" data-tip="Angular" />
+            <StyledIcon src={imgTypescript} alt="Typescript" data-tip="Typescript" />
             <StyledIcon src={imgMaterial} alt="MaterialUI" data-tip="MaterialUI" />
         </PtfIconWrapper>
         <ReactTooltip />

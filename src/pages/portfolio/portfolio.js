@@ -3,6 +3,7 @@ import Arrow from '../../media/portfolio/icon/arrow-stroke.svg';
 
 import Background from '../../components/background/background';
 import Nav from '../../components/nav/nav';
+import ScrollToTop from '../../components/scroll-to-top/scroll-to-top';
 
 import {
     PortfolioMain,
@@ -22,6 +23,7 @@ const Portfolio = () => {
         <div>
             <Background />
             <Nav />
+            <ScrollToTop />
             
             <PortfolioMain>
                 {/* <PortfolioHeaderContainer>
