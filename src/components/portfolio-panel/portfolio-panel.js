@@ -2,6 +2,7 @@ import React from 'react';
 import { 
     PtfPanelContainer,
     PftImageOverlay,
+    PftOverlayText,
     PtfImageWrapper,
     PtfImage,
     PtfPanelHeader,
@@ -16,6 +17,7 @@ const PortfolioPanel = ({ data }) => {
         <PtfPanelContainer
             >
             <PtfImageWrapper>
+                <PftOverlayText data-text="visit">visit</PftOverlayText>
                 <PftImageOverlay
                     onClick={() => window.open(data.url, '_newtab')} />
                 <PtfImage 

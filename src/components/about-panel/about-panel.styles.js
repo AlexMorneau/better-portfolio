@@ -4,7 +4,7 @@ import { colors } from '../data/data';
 export const PanelContainer = styled.div`
     display: flex;
     flex-direction: column;
-    margin-top: 10%;
+    margin-top: 20%;
     /* margin-left: 80px;
     margin-right: 80px; */
     align-items: center;
@@ -17,12 +17,12 @@ export const PanelContainer = styled.div`
     /* background-color: ${colors.white}; */
     background: linear-gradient(0deg, white 68%, rgba(0,0,0, 0) 32%);
     opacity: 0.85;
-    transition: 100ms ease-in-out;
+    transition: 200ms ease-in-out;
     z-index: 1;
 
     &:hover {
-        transition: 200ms ease-in-out;
-        height: 475px;
+        transition: 100ms ease-in-out;
+        height: 460px;
         opacity: 1;
     }
 
@@ -50,8 +50,8 @@ export const PanelImageWrapper = styled.div`
 export const PanelImage = styled.img`
     background-size: cover;
     cursor: default;
-    width: 97%;
-    height: 97%;
+    width: 95%;
+    height: 95%;
     border-radius: 50%;
     overflow: hidden;
     z-index: 2;
@@ -78,21 +78,20 @@ export const PanelTitle = styled.h4`
         top: 0;
         left: 0;
         height: 100%;
-        z-index: -1;
     }
-
+    
     &:before {
-        color: ${colors.teal};
+        color: ${colors.red};
         top: 2px;
         left: 2px;
-        transition: 100ms ease-in-out;
+        z-index: -1;
     }
-
+    
     &:after {
-        color: ${colors.red};
-        top: -2px;
-        left: -2px;
-        transition: 100ms ease-in-out;
+        color: ${colors.teal};
+        top: 4px;
+        left: 4px;
+        z-index: -2;
     }
 `;
 

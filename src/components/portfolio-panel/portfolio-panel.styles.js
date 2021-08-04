@@ -53,6 +53,44 @@ export const PftImageOverlay = styled.div`
     }
 `;
 
+export const PftOverlayText = styled.h1`
+    position: absolute;
+    top: 0%;
+    right: 5%;
+    /* font-family: 'Secular One', sans-serif; */
+    color: ${colors.black};
+    font-size: 1rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 0.4rem;
+    transition: 300ms ease-in-out;
+    opacity: 1;
+    z-index: 3;
+
+    &:before, &:after {
+        content: attr(data-text);
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+    }
+
+    &:before {
+        color: ${colors.red};
+        top: 1px;
+        left: 1px;
+        z-index: -1;
+    }
+
+    &:after {
+        color: ${colors.teal};
+        top: 2.5px;
+        left: 2.5px;
+        z-index: -2;
+    }
+`;
+
+
 export const PtfImage = styled.img`
     cursor: pointer;
     z-index: 1;
