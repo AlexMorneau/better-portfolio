@@ -1,9 +1,6 @@
 import React, { useState } from 'react';
 
-import Nav from '../../components/nav/nav';
-import Background from '../../components/background/background';
 import Alert from '../../components/alert/alert';
-
 
 import emailjs from 'emailjs-com';
 import ReactTooltip from 'react-tooltip';
@@ -15,7 +12,6 @@ import iconGmail from '../../media/contact/icons/gmail.svg';
 import { links } from '../../components/data/data';
 
 // emailJS: https://www.emailjs.com/docs/examples/reactjs/
-// format: name | email | message
 
 import {
     ContactMain,
@@ -56,9 +52,6 @@ const Contact = () => {
 
     return (
         <div>
-            <Nav />
-            <Background />
-            
             <ContactMain>
                 <ContactContainer>
                     <ContactForm onSubmit={sendEmail}>

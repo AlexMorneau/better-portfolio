@@ -1,17 +1,10 @@
 import React from 'react';
-import Arrow from '../../media/portfolio/icon/arrow-stroke.svg';
 
-import Background from '../../components/background/background';
-import Nav from '../../components/nav/nav';
 import ScrollToTop from '../../components/scroll-to-top/scroll-to-top';
 
 import {
     PortfolioMain,
-    PortfolioGrid,
-    PortfolioHeaderContainer,
-    PortfolioHeader,
-    PortfolioArrowLeft,
-    PortfolioArrowRight
+    PortfolioGrid
 } from './portfolio.styles';
 
 import PortfolioPanel from '../../components/portfolio-panel/portfolio-panel';
@@ -21,17 +14,9 @@ import { portfolioData } from '../../components/data/data';
 const Portfolio = () => {
     return (
         <div>
-            <Background />
-            <Nav />
             <ScrollToTop />
             
             <PortfolioMain>
-                {/* <PortfolioHeaderContainer>
-                    <PortfolioArrowLeft src={Arrow} />
-                    <PortfolioHeader>scroll to explore!</PortfolioHeader>
-                    <PortfolioArrowRight src={Arrow} />
-                </PortfolioHeaderContainer> */}
-
                 <PortfolioGrid>
                 {
                     portfolioData.map((project) => (

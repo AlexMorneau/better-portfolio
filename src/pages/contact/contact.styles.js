@@ -1,8 +1,6 @@
 import styled from 'styled-components';
 import { colors } from '../../components/data/data';
 
-// ###################### CONTACT
-
 export const ContactMain = styled.div`
     display: flex;
     justify-content: center;
@@ -94,8 +92,3 @@ export const ContactAltIcon = styled.img`
     width: auto;
     padding-right: 1rem;
 `;
-
-export const ContactAltEmail = styled.p`
-
-`;
-
