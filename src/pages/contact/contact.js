@@ -5,6 +5,9 @@ import Background from '../../components/background/background';
 import Alert from '../../components/alert/alert';
 import emailjs from 'emailjs-com';
 
+import iconGithub from '../../media/contact/icons/github.svg';
+import iconLinkedin from '../../media/contact/icons/linkedin.svg';
+import iconGmail from '../../media/contact/icons/gmail.svg';
 
 // emailJS: https://www.emailjs.com/docs/examples/reactjs/
 // format: name | email | message
@@ -18,7 +21,11 @@ import {
     ContactLabel,
     ContactInput,
     ContactTextArea,
-    ContactSubmit
+    ContactSubmit,
+    ContactAltHeader,
+    ContactAltIcons,
+    ContactAltIcon,
+    ContactAltEmail
 } from './contact.styles';
 
 
@@ -91,6 +98,15 @@ const Contact = () => {
                             <ContactSubmit 
                                 type="submit"
                                 value="send" />
+                        </ContactRow>
+                        <ContactRow>
+                            <ContactAltHeader>Alternatively :</ContactAltHeader>
+                            <ContactAltIcons>
+                                <ContactAltIcon src={iconGmail} alt="gmail" />
+                                <ContactAltIcon src={iconLinkedin} alt="linkedin" />
+                                <ContactAltIcon src={iconGithub} alt="github" />
+                            </ContactAltIcons>
+                            <ContactAltEmail></ContactAltEmail>
                         </ContactRow>
                     </ContactForm>
                 </ContactContainer>

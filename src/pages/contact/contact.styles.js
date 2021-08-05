@@ -6,6 +6,7 @@ import { colors } from '../../components/data/data';
 export const ContactMain = styled.div`
     display: flex;
     justify-content: center;
+    align-items: center;
     padding: 4rem;
 `;
 
@@ -69,3 +70,31 @@ export const ContactSubmit = styled.input`
     text-transform: uppercase;
     letter-spacing: 0.1rem;
 `;
+
+export const ContactAltHeader = styled.h1`
+    border-top: 1px solid ${colors.grey};
+    color: ${colors.grey};
+    text-decoration: none;
+    text-transform: uppercase;
+    padding-top: 1rem;
+    font-size: 1rem;
+    letter-spacing: 0.2rem;
+`;
+
+
+export const ContactAltIcons = styled.div`
+    height: 2rem;
+    width: 100%;
+
+`;
+
+export const ContactAltIcon = styled.img`
+    height: 2rem;
+    width: auto;
+    padding-right: 1rem;
+`;
+
+export const ContactAltEmail = styled.p`
+
+`;
+
