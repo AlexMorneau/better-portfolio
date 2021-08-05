@@ -4,7 +4,7 @@ import { colors } from '../data/data';
 export const PanelContainer = styled.div`
     display: flex;
     flex-direction: column;
-    margin-top: 20%;
+    margin-top: 30%;
     /* margin-left: 80px;
     margin-right: 80px; */
     align-items: center;
@@ -15,20 +15,15 @@ export const PanelContainer = styled.div`
     padding: 2em;
     cursor: default;
     /* background-color: ${colors.white}; */
-    background: linear-gradient(0deg, white 68%, rgba(0,0,0, 0) 32%);
+    background: linear-gradient(0deg, white 90%, rgba(0,0,0, 0) 10%);
     opacity: 0.85;
     transition: 200ms ease-in-out;
     z-index: 1;
 
     &:hover {
-        transition: 100ms ease-in-out;
-        height: 460px;
+        transition: 200ms ease-in-out;
+        transform: translateY(0.5rem);
         opacity: 1;
-    }
-
-    &:hover .image-wrapper {
-        transition: 300ms ease-in-out;
-        background-color: rgb(255, 251, 133, 0.8);
     }
 `;
 
@@ -42,16 +37,15 @@ export const PanelImageWrapper = styled.div`
     width: 180px;
     border-radius: 50%;
     cursor: default;
-    background-color: ${colors.teal};
-    transition: 500ms ease-in-out;
+    /* background-color: ${colors.grey}; */
     z-index: 2;
 `;
 
 export const PanelImage = styled.img`
     background-size: cover;
     cursor: default;
-    width: 95%;
-    height: 95%;
+    width: 100%;
+    height: 100%;
     border-radius: 50%;
     overflow: hidden;
     z-index: 2;
@@ -68,6 +62,7 @@ export const PanelTitle = styled.h4`
     text-align: center;
     margin: 0;
     margin-top: 6rem;
+    border-bottom: 1px solid ${colors.grey};
     position: absolute;
     top: 0;
     z-index: 3;

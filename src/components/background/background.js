@@ -9,7 +9,7 @@ import {
 
 // background opacity default set to 0.85
 
-const  Background = ({ opacity }) => {
+const Background = ({ opacity }) => {
     return (
         <MainBackground>
             <VideoOverlay
