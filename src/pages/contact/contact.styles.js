@@ -89,6 +89,7 @@ export const ContactAltIcons = styled.div`
 `;
 
 export const ContactAltIcon = styled.img`
+    cursor: pointer;
     height: 2rem;
     width: auto;
     padding-right: 1rem;

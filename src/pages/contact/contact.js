@@ -1,13 +1,18 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 
 import Nav from '../../components/nav/nav';
 import Background from '../../components/background/background';
 import Alert from '../../components/alert/alert';
+
+
 import emailjs from 'emailjs-com';
+import ReactTooltip from 'react-tooltip';
 
 import iconGithub from '../../media/contact/icons/github.svg';
 import iconLinkedin from '../../media/contact/icons/linkedin.svg';
 import iconGmail from '../../media/contact/icons/gmail.svg';
+
+import { links } from '../../components/data/data';
 
 // emailJS: https://www.emailjs.com/docs/examples/reactjs/
 // format: name | email | message
@@ -24,8 +29,7 @@ import {
     ContactSubmit,
     ContactAltHeader,
     ContactAltIcons,
-    ContactAltIcon,
-    ContactAltEmail
+    ContactAltIcon
 } from './contact.styles';
 
 
@@ -102,11 +106,33 @@ const Contact = () => {
                         <ContactRow>
                             <ContactAltHeader>Alternatively :</ContactAltHeader>
                             <ContactAltIcons>
-                                <ContactAltIcon src={iconGmail} alt="gmail" />
-                                <ContactAltIcon src={iconLinkedin} alt="linkedin" />
-                                <ContactAltIcon src={iconGithub} alt="github" />
+                                <a 
+                                    href="mailto:alex.morneau.92@gmail.com"
+                                    data-tip="Send me an email">
+                                    <ContactAltIcon 
+                                        src={iconGmail} 
+                                        alt="gmail" />
+                                </a>
+                                <a 
+                                    href={links.linkedin}
+                                    target="_blank"
+                                    rel="noreferrer"
+                                    data-tip="Connect with me on LinkedIn">
+                                    <ContactAltIcon 
+                                        src={iconLinkedin} 
+                                        alt="linkedin" />
+                                </a>
+                                <a
+                                    href={links.github} 
+                                    target="_blank"
+                                    rel="noreferrer"
+                                    data-tip="Find me on Github">
+                                    <ContactAltIcon 
+                                        src={iconGithub} 
+                                        alt="github" />
+                                </a>
+                                <ReactTooltip />
                             </ContactAltIcons>
-                            <ContactAltEmail></ContactAltEmail>
                         </ContactRow>
                     </ContactForm>
                 </ContactContainer>
