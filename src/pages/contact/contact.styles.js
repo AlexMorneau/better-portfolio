@@ -1,91 +1,71 @@
 import styled from 'styled-components';
 import { colors } from '../../components/data/data';
 
+// ###################### CONTACT
 
 export const ContactMain = styled.div`
     display: flex;
     justify-content: center;
-    background: ${colors.white};
     padding: 4rem;
 `;
 
-// this
-
 export const ContactContainer = styled.div`
-    display: grid;
+
 `;
 
 export const ContactForm = styled.form`
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    background-color: red;
+    display: grid;
+    background-color: ${colors.white};
+    padding: 1.5rem 2rem 1.5rem 2rem;
 `;
 
 export const ContactRow = styled.div`
     display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 7rem;
-    /* background: ${colors.gold}; */
-    width: 500px;
-    border: 1px solid ${colors.grey};
+    flex-direction: column;
+    height: auto;
+    width: 350px;
+    padding-top: 0.5rem;
+`;
+
+export const ContactHeader = styled.span`
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 2rem;
+    font-family: 'Secular One', sans-serif;
+    color: ${colors.grey};
+    border-bottom: 1px solid ${colors.grey};
+`;
+
+export const ContactLabel = styled.h1`
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    font-size: 1rem;
+    color: ${colors.grey};
 `;
 
 export const ContactInput = styled.input`
-    padding: 1rem;
+    padding: 0.4rem;
     border: none;
+    border: 1px solid ${colors.teal};
+    border-radius: 10px;
 `;
 
 export const ContactTextArea = styled.textarea`
+    height: auto;
+    width: auto;
     resize: none;
+    padding: 0.5rem;
+    border: 1px solid ${colors.teal};
+    border-radius: 10px;
 `;
 
-
-// ########################### SUBMIT BUTTON
-
-export const ButtonSubmit = styled.a`
-    cursor: pointer;
-    font-size: 0.9rem;
-    text-align: center;
-    text-transform: uppercase;
+export const ContactSubmit = styled.input`
+    width: 50%;
+    height: 2rem;
+    margin-top: 1rem;
+    transition: 300ms ease-in-out;
     text-decoration: none;
+    text-transform: uppercase;
     letter-spacing: 0.1rem;
-    max-width: 160px;
-    width: 100%;
-    position: relative;
-    line-height: 45px;
-    margin: 20px 0 10px;
-    color: ${colors.black};
-
-    &:hover {
-        letter-spacing: 0.14rem;
-        transition: all 350ms linear;
-
-        rect {
-            stroke-width: 4;
-            stroke-dasharray: 15, 310;
-            stroke-dashoffset: 48;
-            transition: all 1350ms cubic-bezier(0.19, 1, 0.22, 1);
-        }
-    }
-`;
-
-export const ButtonSVG = styled.svg`
-    height: 45px;
-    left: 0;
-    top: 0;
-    position: absolute;
-    width: 100%;
-`;
-
-
-export const ButtonRect = styled.rect`
-    fill: none;
-    stroke: ${colors.black};
-    stroke: rgb(0, 0, 0);
-    stroke-width: 2;
-    stroke-dasharray: 422, 0;
-    transition: all 350ms linear;
 `;

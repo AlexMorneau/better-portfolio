@@ -108,7 +108,6 @@ export const PtfPanelHeader = styled.div`
     border-bottom: 1px solid ${colors.grey};
     transition: 300ms ease-in-out;
     z-index: 3;
-    
 `;
 
 export const PtfPanelDescription = styled.p`

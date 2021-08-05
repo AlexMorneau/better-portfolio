@@ -1,7 +1,10 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
+
 import Nav from '../../components/nav/nav';
 import Background from '../../components/background/background';
+import Alert from '../../components/alert/alert';
 import emailjs from 'emailjs-com';
+
 
 // emailJS: https://www.emailjs.com/docs/examples/reactjs/
 // format: name | email | message
@@ -11,14 +14,17 @@ import {
     ContactContainer,
     ContactForm,
     ContactRow,
+    ContactHeader,
+    ContactLabel,
     ContactInput,
     ContactTextArea,
-    ButtonSubmit,
-    ButtonSVG,
-    ButtonRect
+    ContactSubmit
 } from './contact.styles';
 
+
+
 const Contact = () => {
+    const [alert, setAlert] = useState(false);
 
     function sendEmail(e) {
         e.preventDefault();
@@ -34,8 +40,8 @@ const Contact = () => {
             console.log(error.text);
         });
         e.target.reset();
+        setAlert(true);
     }
-
 
     return (
         <div>
@@ -45,8 +51,11 @@ const Contact = () => {
             <ContactMain>
                 <ContactContainer>
                     <ContactForm onSubmit={sendEmail}>
-                        <ContactRow
-                            className="form-group">
+                        <ContactRow>
+                            <ContactHeader>Send a Message</ContactHeader>
+                        </ContactRow>
+                        <ContactRow className="form-group">
+                            <ContactLabel>name</ContactLabel>
                             <ContactInput
                                 id="name"
                                 className="form-control"
@@ -54,34 +63,42 @@ const Contact = () => {
                                 placeholder="Full Name"
                                 name="name" />
                         </ContactRow>
-                        <ContactRow
-                            className="form-group">
+                        <ContactRow className="form-group">
+                            <ContactLabel>email</ContactLabel>
                             <ContactInput
                                 className="form-control"
                                 type="text"
                                 placeholder="Eg. example@email.com"
                                 name="email" />
                         </ContactRow>
-                        <ContactRow
-                            className="form-group">
+                        <ContactRow className="form-group">
+                            <ContactLabel>subject</ContactLabel>
                             <ContactInput
                                 className="form-control"
                                 type="text"
                                 placeholder="Subject"
                                 name="subject" />
                         </ContactRow>
-                        <ContactRow>
+                        <ContactRow className="form-group">
+                            <ContactLabel>message</ContactLabel>
                             <ContactTextArea
                                 className="form-control"
                                 placeholder="Your Message"
+                                rows="4"
                                 name="message" />
                         </ContactRow>
                         <ContactRow>
-                            <input type="submit" value="send email"></input>
+                            <ContactSubmit 
+                                type="submit"
+                                value="send" />
                         </ContactRow>
                     </ContactForm>
                 </ContactContainer>
             </ContactMain>
+
+            <Alert
+                active={alert}
+                setActive={setAlert} />
             
         </div>
     )
