@@ -12,23 +12,24 @@ import {
 const MobileNav = ({ activeToggle, isActive }) => {
     return (
         <MobileNavContainer 
-            onClick={() => activeToggle} 
+            onClick={activeToggle} 
             isActive={isActive}>
             <IconWrapper>
-                <IconClose />
+                <IconClose
+                    style={{color: 'red'}} />
             </IconWrapper>
 
             <MobileNavWrapper>
                 <MobileNavMenu>
                     <MobileNavLink 
                         to='/about'
-                        onClick={() => activeToggle}>about</MobileNavLink>
+                        onClick={activeToggle}>about</MobileNavLink>
                     <MobileNavLink 
                         to='/portfolio'
-                        onClick={() => activeToggle}>portfolio</MobileNavLink>
+                        onClick={activeToggle}>portfolio</MobileNavLink>
                     <MobileNavLink 
                         to='/contact'
-                        onClick={() => activeToggle}>contact</MobileNavLink>
+                        onClick={activeToggle}>contact</MobileNavLink>
                 </MobileNavMenu>
             </MobileNavWrapper>
         </MobileNavContainer>

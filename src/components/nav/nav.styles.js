@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import { colors } from '../data/data';
+import { BiMenu } from 'react-icons/bi';
 
 export const NavMain = styled.div`
     display: flex;
@@ -15,6 +16,10 @@ export const NavContainer = styled.div`
     align-items: center;
     justify-content: space-between;
     height: 60px;
+
+    @media screen and (max-width: 768px) {
+        display: none;
+    }
 `;
 
 export const NavItem = styled.div`
@@ -57,4 +62,23 @@ export const NavItem = styled.div`
 	    -webkit-transform: scale(1);
 	    transform: scale(1);
     }
+`;
+
+
+export const MobileIconWrapper = styled.div`
+    display: none;
+    
+    @media screen and (max-width: 768px) {
+        display: block;
+        position: absolute;
+        cursor: pointer;
+        top: 0;
+        right: 0;
+        transform: translate(-100%, 60%);
+    }
+`;
+
+export const MobileIcon = styled(BiMenu)`
+    color: ${colors.white};
+    font-size: 3rem;
 `;

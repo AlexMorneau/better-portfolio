@@ -3,14 +3,21 @@ import { NavLink } from 'react-router-dom';
 import {
     NavMain,
     NavContainer,
-    NavItem
+    NavItem,
+    MobileIconWrapper,
+    MobileIcon
 } from './nav.styles';
 
 // Imported to Appjs to be applied to all pages
 
-const Nav = () => {
+const Nav = ({ activeToggle }) => {
     return (
             <NavMain>
+                <MobileIconWrapper
+                    onClick={activeToggle}>
+                    <MobileIcon />
+                </MobileIconWrapper>
+
                 <NavContainer>
                     <NavLink exact to="/about">
                         <NavItem>About</NavItem>

@@ -22,6 +22,10 @@ function App() {
 
   const [isActive, setIsActive] = useState(false);
 
+  function activeToggle() {
+    setIsActive(!isActive);
+  }
+
   return (
     <div className="main-container">
       <Background />
@@ -31,7 +35,11 @@ function App() {
           <Route path="/" exact component={Splash} />
           
           <div>
-            <Nav />
+            <MobileNav 
+              activeToggle={activeToggle}
+              isActive={isActive} />
+            <Nav 
+              activeToggle={activeToggle} />
             <Route path="/about" exact component={About}/>
             <Route path="/portfolio" exact component={Portfolio} />
             <Route path="/contact" exact component={Contact} />

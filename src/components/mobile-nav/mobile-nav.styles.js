@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import { NavLink } from 'react-router-dom';
 import { colors } from '../data/data';
-import { GrClose } from "react-icons/gr";
+import { BiX } from "react-icons/bi";
 
 export const MobileNavContainer = styled.div`
     display: grid;
@@ -12,6 +12,7 @@ export const MobileNavContainer = styled.div`
     width: 100%;
     height: 100%;
     background: ${colors.black};
+    z-index: 6;
     transition: 300ms ease-in-out;
     opacity: ${({ isActive }) => (isActive ? '1' : '0')};
     top: ${({ isActive }) => (isActive ? '0' : '-100%')};
@@ -24,8 +25,8 @@ export const IconWrapper = styled.div`
     cursor: pointer;
 `;
 
-export const IconClose = styled(GrClose)`
-    color: ${colors.white};
+export const IconClose = styled(BiX)`
+    font-size: 5rem;
 `;
 
 export const MobileNavWrapper = styled.div`
@@ -51,7 +52,7 @@ export const MobileNavLink = styled(NavLink)`
     transition: 300ms ease-in-out;
 
     &:hover {
-        color: ${colors.gold};
+        color: ${colors.teal};
         transition: 300ms ease-in-out;
     }
 `;
