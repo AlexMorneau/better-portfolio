@@ -6,6 +6,7 @@ import {
     PortfolioMain,
     PortfolioGrid
 } from './portfolio.styles';
+import './portfolio.css';
 
 import PortfolioPanel from '../../components/portfolio-panel/portfolio-panel';
 
@@ -13,7 +14,7 @@ import { portfolioData } from '../../components/data/data';
 
 const Portfolio = () => {
     return (
-        <div>
+        <div className="portfolio-parent">
             <ScrollToTop />
             
             <PortfolioMain>
