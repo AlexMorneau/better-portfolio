@@ -1,3 +1,4 @@
+import React, { useState } from 'react';
 import './App.css';
 
 // pages
@@ -9,6 +10,7 @@ import Contact from './pages/contact/contact';
 // components
 import Background from './components/background/background';
 import Nav from './components/nav/nav'
+import MobileNav from './components/mobile-nav/mobile-nav';
 
 import {
   BrowserRouter as Router,
@@ -17,6 +19,9 @@ import {
 } from 'react-router-dom';
 
 function App() {
+
+  const [isActive, setIsActive] = useState(false);
+
   return (
     <div className="main-container">
       <Background />
