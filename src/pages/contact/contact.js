@@ -28,8 +28,6 @@ import {
     ContactAltIcon
 } from './contact.styles';
 
-
-
 const Contact = () => {
     const [alert, setAlert] = useState(false);
 
@@ -46,6 +44,7 @@ const Contact = () => {
         }, (error) => {
             console.log(error.text);
         });
+        console.log(process.env.REACT_APP_SERVICE_ID);
         e.target.reset();
         setAlert(true);
     }
