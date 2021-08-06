@@ -4,10 +4,11 @@ import { colors } from '../data/data';
 import { BiX } from "react-icons/bi";
 
 export const MobileNavContainer = styled.div`
-    display: grid;
-    align-items: center;
+    display: block;
     top: 0;
     left: 0;
+    right: 0;
+    bottom: 0;
     position: fixed;
     width: 100%;
     height: 100%;
@@ -19,24 +20,24 @@ export const MobileNavContainer = styled.div`
 `;
 
 export const IconWrapper = styled.div`
-    position: absolute;
-    top: 1.2rem;
-    right: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+    margin: 3rem;
     cursor: pointer;
 `;
 
 export const IconClose = styled(BiX)`
-    font-size: 5rem;
+    font-size: 3rem;
 `;
 
-export const MobileNavWrapper = styled.div`
-    color: red;
-`;
-
-export const MobileNavMenu = styled.ul`
+export const MobileNavMenu = styled.div`
     display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(6, 80px);
+    width: 100%;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-gap: 3rem;
     text-align: center;
 `;
 
@@ -45,7 +46,7 @@ export const MobileNavLink = styled(NavLink)`
     align-items: center;
     justify-content: center;
     color: ${colors.white};
-    font-size: 1rem;
+    font-size: 1.5rem;
     text-decoration: none;
     text-transform: uppercase;
     cursor: pointer;

@@ -73,8 +73,9 @@ export const MobileIconWrapper = styled.div`
         position: absolute;
         cursor: pointer;
         top: 0;
-        right: 0;
-        transform: translate(-100%, 60%);
+        padding-top: 2rem;
+        /* right: 0; */
+        /* transform: translate(-100%, 60%); */
     }
 `;
 
