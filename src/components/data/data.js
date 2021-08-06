@@ -187,7 +187,7 @@ export const portfolioData = [
         url: links.cryptoClue,
         img: imgCryptoClue,
         title: 'crypto clue',
-        description: 'A simple cryptocurrency hub that fetches and presents an array of organized crypto data in table format, providing a search bar to narrow results by the symbol (ticker) or coin name. CoinGecko API (https://www.coingecko.com/en/api) is used.',
+        description: <div>A simple cryptocurrency hub that fetches and presents an array of organized crypto data in table format, providing a search bar to narrow results by the symbol (ticker) or coin name. <StyledLink href="https://www.coingecko.com/en/api">CoinGecko API</StyledLink> is where data is pulled from.</div>,
         icons:
         <>
         <PtfIconWrapper>
@@ -204,7 +204,7 @@ export const portfolioData = [
         url: links.clothingStore,
         img: imgClothingStore,
         title: 'clothing shop',
-        description: 'temporary text',
+        description: 'An online clothing store built using React and the Redux library for organizing state management. Features include account creation or signing in with Google, Firebase Firestore to manage user data, a cart and checkout system, and a payment system using Stripe.',
         icons:
         <>
         <PtfIconWrapper>
@@ -222,7 +222,7 @@ export const portfolioData = [
         url: links.instantNewsFeed,
         img: imgNewsFeed,
         title: 'instant news',
-        description: 'Instant News Feed queries Canadian news data from NewsAPI.org (https://newsapi.org/) and presents it in a horizontally scrollable list. Pagination is used to limit the results being rendered to the page to reduce loading times.',
+        description: <div>Instant News Feed queries Canadian news data from <StyledLink href="https://newsapi.org/">NewsAPI.org</StyledLink> and presents it in a horizontally scrollable list. Pagination is used to limit the results being rendered to the page to reduce loading times.</div>,
         icons:
         <>
         <PtfIconWrapper>
