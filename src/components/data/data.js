@@ -277,7 +277,7 @@ export const portfolioData = [
         url: links.gh_portfolio,
         img: imgPortfolio,
         title: 'this website!',
-        description: 'My portfolio website is a web app through which I aim to demonstrate my abilities and provide an introduction of myself, my goals, and a little bit of my personality. This website was built using React and features responsive design, interactive icons with tooltips, styled components, and programmatically rendered data such that future additions and edits will not need to be hardcoded.',
+        description: 'My portfolio website is a web app through which I aim to demonstrate my abilities and provide an introduction of myself, my goals, and a little bit of my personality. This website was built using React and features state management in functional components with React Hooks, responsive design, interactive icons with tooltips, styled components, and programmatically rendered data such that future additions and edits will not need to be hardcoded.',
         icons:
         <>
         <PtfIconWrapper>
