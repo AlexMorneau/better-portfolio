@@ -259,7 +259,7 @@ export const portfolioData = [
         url: links.videogameDirectory,
         img: imgVgdb,
         title: 'videogame directory',
-        description: 'VGDirectory pulls data from RAWG API (https://rawg.io/apidocs), and presents a list of games that can be searched, filtered, or selected. Upon selection a details page is rendered along with media corresponding to the game, such as a banner image, screenshots, trailers, and metacritic rating.',
+        description: <div>VGDirectory pulls data from <StyledLink href="https://rawg.io/apidocs">RAWG API</StyledLink>, and presents a list of games that can be searched, filtered, or selected. Upon selection a details page is rendered along with media corresponding to the game, such as a banner image, screenshots, trailers, and metacritic rating.</div>,
         icons:
         <>
         <PtfIconWrapper>
@@ -277,7 +277,7 @@ export const portfolioData = [
         url: links.gh_portfolio,
         img: imgPortfolio,
         title: 'this website!',
-        description: 'temporary text',
+        description: 'My portfolio website is a web app through which I aim to demonstrate my abilities and provide an introduction of myself, my goals, and a little bit of my personality. This website was built using React and features responsive design, interactive icons with tooltips, styled components, and programmatically rendered data such that future additions and edits will not need to be hardcoded.',
         icons:
         <>
         <PtfIconWrapper>
