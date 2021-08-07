@@ -204,7 +204,7 @@ export const portfolioData = [
         url: links.clothingStore,
         img: imgClothingStore,
         title: 'clothing shop',
-        description: 'An online clothing store built using React and the Redux library for organizing state management. Features include account creation or signing in with Google, Firebase Firestore to manage user data, a cart and checkout system, and a payment system using Stripe.',
+        description: 'An online clothing store built using React and the Redux library for state management. Features include account creation or signing in with Google, Firebase Firestore to manage user data, a cart & checkout system, and a payment system using Stripe.',
         icons:
         <>
         <PtfIconWrapper>
@@ -277,7 +277,7 @@ export const portfolioData = [
         url: links.gh_portfolio,
         img: imgPortfolio,
         title: 'this website!',
-        description: 'My portfolio website is a web app through which I aim to demonstrate my abilities and provide an introduction of myself, my goals, and a little bit of my personality. This website was built using React and features state management in functional components with React Hooks, responsive design, interactive icons with tooltips, styled components, and programmatically rendered data such that future additions and edits will not need to be hardcoded.',
+        description: 'My portfolio website is a web app through which I aim to demonstrate my abilities and provide an introduction of myself and hopefully a bit of my personality. It features React hook functional component state management, responsive design, icons & tooltips, and programmatically rendered data so future additions will not need to be hardcoded.',
         icons:
         <>
         <PtfIconWrapper>

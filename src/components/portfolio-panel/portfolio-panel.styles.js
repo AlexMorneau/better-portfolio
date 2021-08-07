@@ -92,6 +92,7 @@ export const PftOverlayText = styled.h1`
 
 
 export const PtfImage = styled.img`
+    background-size: cover;
     cursor: pointer;
     z-index: 1;
 `;
