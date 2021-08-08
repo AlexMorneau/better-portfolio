@@ -15,7 +15,6 @@ export const PtfPanelContainer = styled.div`
     width: 400px;
     background-color: ${colors.white};
     transition: 300ms ease-in-out;
-    /* border-radius: 3%; */
     overflow: hidden;
     z-index: 1;
 

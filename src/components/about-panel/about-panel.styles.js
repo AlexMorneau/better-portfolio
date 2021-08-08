@@ -4,9 +4,7 @@ import { colors } from '../data/data';
 export const PanelContainer = styled.div`
     display: flex;
     flex-direction: column;
-    margin-top: 30%;
-    /* margin-left: 80px;
-    margin-right: 80px; */
+    margin-top: 8rem;
     align-items: center;
     justify-content: space-evenly;
     position: relative;
@@ -14,7 +12,6 @@ export const PanelContainer = styled.div`
     width: 280px;
     padding: 2em;
     cursor: default;
-    /* background-color: ${colors.white}; */
     background: linear-gradient(0deg, white 90%, rgba(0,0,0, 0) 10%);
     opacity: 0.85;
     transition: 200ms ease-in-out;
