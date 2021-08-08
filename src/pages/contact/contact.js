@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
 import Alert from '../../components/alert/alert';
 
@@ -48,6 +48,10 @@ const Contact = () => {
         e.target.reset();
         setAlert(true);
     }
+
+    useEffect(() => {
+        document.title = "Alex Morneau | Contact"
+      }, []);
 
     return (
         <div>

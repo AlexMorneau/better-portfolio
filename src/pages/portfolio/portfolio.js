@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 
 import ScrollToTop from '../../components/scroll-to-top/scroll-to-top';
 
@@ -13,6 +13,10 @@ import PortfolioPanel from '../../components/portfolio-panel/portfolio-panel';
 import { portfolioData } from '../../components/data/data';
 
 const Portfolio = () => {
+    useEffect(() => {
+        document.title = "Alex Morneau | Portfolio"
+      }, []);
+
     return (
         <div className="portfolio-parent">
             <ScrollToTop />

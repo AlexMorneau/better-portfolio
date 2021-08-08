@@ -95,7 +95,7 @@ export const PanelTitle = styled.h4`
 
 
 export const PanelDescription = styled.p`
-    color: ${colors.grey};
+    color: ${colors.black};
     text-align: justify;
     /* position: absolute;*/
     margin-top: 9rem; 

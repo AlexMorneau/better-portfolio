@@ -11,13 +11,17 @@ import {
 } from './portfolio-panel.styles';
 
 import ButtonCustom from '../button-custom/button-custom';
+import ReactTooltip from 'react-tooltip';
 
 const PortfolioPanel = ({ data }) => {
     return (
         <PtfPanelContainer
             >
             <PtfImageWrapper>
-                <PftOverlayText data-text="visit">visit</PftOverlayText>
+                <PftOverlayText 
+                    data-text="visit" 
+                    data-tip="test">visit</PftOverlayText>
+                <ReactTooltip />
                 <PftImageOverlay
                     onClick={() => window.open(data.url, '_newtab')} />
                 <PtfImage 

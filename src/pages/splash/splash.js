@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { 
     SplashMain,
     SplashContainer,
@@ -19,6 +19,10 @@ import ButtonCustom from '../../components/button-custom/button-custom';
 
 
 const Splash = () => {
+    useEffect(() => {
+        document.title = "Alex Morneau | Welcome"
+      }, []);
+
     return (
         <SplashMain>
             <Background opacity={0.6} />
