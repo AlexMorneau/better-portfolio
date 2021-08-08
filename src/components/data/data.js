@@ -119,7 +119,7 @@ export const aboutData = {
         alt: 'Image representing my skills',
         description: 
         <StyledMainContainer>
-            <StyledSubheader>\\ front end //</StyledSubheader>
+            <StyledSubheader>front end</StyledSubheader>
             <StyledSubcontainer>
                 <StyledIcon src={imgReact} alt="reactjs" data-tip="React.js" />
                 <StyledIcon src={imgNext} alt="nextjs" data-tip="Next.js" />
@@ -127,7 +127,7 @@ export const aboutData = {
                 <StyledIcon src={imgDotNet} alt="dot-net" data-tip="ASP.NET" />
             </StyledSubcontainer>
             <ReactTooltip />
-            <StyledSubheader>\\ back end //</StyledSubheader>
+            <StyledSubheader>back end</StyledSubheader>
             <StyledSubcontainer>
                 <StyledIcon src={imgMongoDb} alt="mongo-db" data-tip="MongoDB" />
                 <StyledIcon src={imgExpress} alt="express" data-tip="Express" />
@@ -135,7 +135,7 @@ export const aboutData = {
                 <StyledIcon src={imgMsSql} alt="ms-sql" data-tip="Microsoft SQL Server" />
             </StyledSubcontainer>
             <ReactTooltip />
-            <StyledSubheader>\\ languages //</StyledSubheader>
+            <StyledSubheader>languages</StyledSubheader>
             <StyledSubcontainer>
                 <StyledIcon src={imgJavascript} alt="javascript" data-tip="Javascript" />
                 <StyledIcon src={imgTypescript} alt="typescript" data-tip="Typescript" />
