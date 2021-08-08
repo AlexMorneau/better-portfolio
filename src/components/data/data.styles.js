@@ -46,7 +46,6 @@ export const StyledSubheader = styled.h1`
     cursor: default;
     font-size: 1rem;
     text-decoration: none;
-    border-bottom: 1px solid grey;
     text-transform: uppercase;
     letter-spacing: 0.1rem;
     margin-top: 1rem;

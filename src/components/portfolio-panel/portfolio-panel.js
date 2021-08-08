@@ -13,14 +13,15 @@ import {
 import ButtonCustom from '../button-custom/button-custom';
 import ReactTooltip from 'react-tooltip';
 
+import { BsLink45Deg } from "react-icons/bs";
+
+
 const PortfolioPanel = ({ data }) => {
     return (
         <PtfPanelContainer
             >
             <PtfImageWrapper>
-                <PftOverlayText 
-                    data-text="visit" 
-                    data-tip="test">visit</PftOverlayText>
+                <BsLink45Deg data-tip="test" />
                 <ReactTooltip />
                 <PftImageOverlay
                     onClick={() => window.open(data.url, '_newtab')} />
