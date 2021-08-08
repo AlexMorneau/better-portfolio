@@ -17,12 +17,19 @@ import { BsLink45Deg } from "react-icons/bs";
 
 
 const PortfolioPanel = ({ data }) => {
+    const linkHoverText = "Try out this web app by clicking here!"
+
     return (
-        <PtfPanelContainer
-            >
+        <PtfPanelContainer>
             <PtfImageWrapper>
-                <BsLink45Deg data-tip="test" />
-                <ReactTooltip />
+
+                <PftOverlayText>
+                    <BsLink45Deg 
+                        data-tip={linkHoverText}
+                        onClick={() => window.open(data.url, '_newtab')} />
+                    <ReactTooltip />
+                </PftOverlayText>
+                
                 <PftImageOverlay
                     onClick={() => window.open(data.url, '_newtab')} />
                 <PtfImage 
