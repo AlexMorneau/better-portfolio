@@ -37,7 +37,8 @@ export const PanelImageWrapper = styled.div`
     width: 180px;
     border-radius: 50%;
     cursor: default;
-    /* background-color: ${colors.grey}; */
+    background-color: ${colors.white};
+    /* transform: translate(4rem,); */
     z-index: 2;
 `;
 
@@ -48,6 +49,8 @@ export const PanelImage = styled.img`
     height: 100%;
     border-radius: 50%;
     overflow: hidden;
+    border: 2px solid ${colors.white};
+    transform: translateY(-0.7rem);
     z-index: 2;
 `;
 

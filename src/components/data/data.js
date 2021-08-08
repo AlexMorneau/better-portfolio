@@ -3,9 +3,9 @@
 
 // images - 'splash' and 'about' | photos of me
 import imgSplash from '../../media/splash/face.jpg';
-import imgAboutMe from '../../media/about/aboutme.jpg';
-import imgMySkills from '../../media/about/myskills.png';
-import imgMyInterests from '../../media/about/myinterests.jpg';
+import imgAboutMe from '../../media/about/walk.png';
+import imgMySkills from '../../media/about/working.png';
+import imgMyInterests from '../../media/about/music.png';
 
 // images - 'skills' and 'portfolio' | tech stack icons
 import imgAngular from '../../media/skill-icons/angularjs.svg';
