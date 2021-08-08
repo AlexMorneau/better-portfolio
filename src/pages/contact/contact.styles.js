@@ -83,7 +83,10 @@ export const ContactAltHeader = styled.h1`
 export const ContactAltIcons = styled.div`
     height: 2rem;
     width: 100%;
-
+    margin-top: 0.5rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 `;
 
 export const ContactAltIcon = styled.img`
@@ -91,4 +94,16 @@ export const ContactAltIcon = styled.img`
     height: 2rem;
     width: auto;
     padding-right: 1rem;
+`;
+
+export const ContactAltText = styled.div`
+    cursor: default;
+    margin-left: 2rem;
+    font-size: 1rem;
+    text-decoration: none;
+    text-transform: lowercase;
+    text-align: right;
+    transform: translate(1rem, -0.3rem);
+    color: ${colors.lightGrey};
+    padding: 1rem;
 `;

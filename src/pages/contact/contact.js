@@ -7,7 +7,7 @@ import ReactTooltip from 'react-tooltip';
 
 import iconGithub from '../../media/contact/icons/github.svg';
 import iconLinkedin from '../../media/contact/icons/linkedin.svg';
-import iconGmail from '../../media/contact/icons/gmail.svg';
+import iconGmail from '../../media/contact/icons/outlook.svg';
 
 import { links } from '../../components/data/data';
 
@@ -25,7 +25,8 @@ import {
     ContactSubmit,
     ContactAltHeader,
     ContactAltIcons,
-    ContactAltIcon
+    ContactAltIcon,
+    ContactAltText
 } from './contact.styles';
 
 const Contact = () => {
@@ -103,11 +104,11 @@ const Contact = () => {
                             <ContactAltHeader>Alternatively :</ContactAltHeader>
                             <ContactAltIcons>
                                 <a 
-                                    href="mailto:alex.morneau.92@gmail.com"
-                                    data-tip="Send me an email">
+                                    href="mailto:alex@alexmorneau.ca"
+                                    data-tip="Send me an email: alex@alexmorneau.ca">
                                     <ContactAltIcon 
                                         src={iconGmail} 
-                                        alt="gmail" />
+                                        alt="email" />
                                 </a>
                                 <a 
                                     href={links.linkedin}
@@ -128,6 +129,11 @@ const Contact = () => {
                                         alt="github" />
                                 </a>
                                 <ReactTooltip />
+
+                                <ContactAltText>
+                                    <i>Email me at:</i> <br />
+                                    <b>alex@alexmorneau.ca</b>
+                                </ContactAltText>
                             </ContactAltIcons>
                         </ContactRow>
                     </ContactForm>

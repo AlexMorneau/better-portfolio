@@ -61,7 +61,7 @@ export const colors = {
     white: 'rgb(237, 237, 237)',
     black: 'rgb(17, 17, 17)',
     grey: 'rgb(43, 43, 43)',
-    lightGrey: 'rgb(60, 60, 60)',
+    lightGrey: 'rgb(90, 90, 90)',
     teal: 'rgb(166, 231, 224)',
     gold: 'rgb(255, 251, 133)',
     red: 'rgb(241, 62, 115)'
