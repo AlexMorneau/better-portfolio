@@ -108,7 +108,7 @@ export const aboutData = {
         title: 'about',
         img: imgAboutMe,
         alt: 'Image of Alex',
-        description: <div>Hello! My name is Alex, I'm super passionate about coding with a focus on web development. I went to Seneca for <StyledLink href={links.seneca}>Computer Programming and Analysis</StyledLink>, and while there I also interned at <StyledLink href={links.websdepot}>Websdepot</StyledLink> as well as started developing my own <StyledLink href={links.github}>web apps</StyledLink>. I enjoy diving into projects and I try to bring positive energy and enthusiasm to any team that I'm a part of.</div>,
+        description: <div>Hello! My name is Alex, I'm super passionate about coding with a focus on web development. I studied <StyledLink href={links.seneca}>Computer Programming and Analysis</StyledLink> at Seneca, and while there I also interned at <StyledLink href={links.websdepot}>Websdepot</StyledLink> as well as started developing my own <StyledLink href={links.github}>web apps</StyledLink>. I enjoy diving into projects and I try to bring positive energy and enthusiasm to any team that I'm a part of.</div>,
         button: 'linkedin',
         url: links.linkedin,
         external: true
