@@ -37,7 +37,7 @@ export const PtfImageWrapper = styled.div`
     z-index: 3;
 `;
 
-export const PftImageOverlay = styled.div`
+export const PftImageOverlay = styled.a`
     position: absolute;
     cursor: pointer;
     height: 100%;

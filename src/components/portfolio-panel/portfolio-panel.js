@@ -31,11 +31,13 @@ const PortfolioPanel = ({ data }) => {
                 </PftOverlayText>
                 
                 <PftImageOverlay
-                    onClick={() => window.open(data.url, '_newtab')} />
+                    href={data.url}
+                    target="_blank"
+                    />
                 <PtfImage 
                     src={data.img}
                     alt={data.title}
-                     />
+                    />
             </PtfImageWrapper>
             <PtfPanelHeader>{data.title}</PtfPanelHeader>
             <PtfPanelDescription>{data.description}</PtfPanelDescription>
